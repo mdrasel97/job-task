@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Button } from "./ui/button";
+import { ArrowRight } from "lucide-react";
 
 export default function GetInTouch() {
   return (
@@ -14,7 +15,7 @@ export default function GetInTouch() {
           that needs the attention of a trusted professional.
         </p>
         <Button className=" bg-white text-primary hover:bg-blue-100 transition font-semibold">
-          Book a Professional Plumber
+          Book a Professional Plumber <ArrowRight />
         </Button>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import Faq from "@/components/Faq";
+import Footer from "@/components/Footer";
 import GetInTouch from "@/components/GetInTouch";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       </div>
       <Faq />
       <GetInTouch />
+      <Footer />
     </div>
   );
 }
