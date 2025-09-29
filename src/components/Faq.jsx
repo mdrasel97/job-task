@@ -7,39 +7,39 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const faqs = [
+const accordionsItems = [
   {
-    id: "item-1",
-    question: "What is this service about?",
+    id: 1,
+    question: "Do plumbers deal with heating?",
     answer:
-      "This service helps you manage your tasks efficiently with an easy-to-use interface and smart tools.",
+      "Some of our local plumbers are also gas registered and experienced working on heating systems, bathrooms and kitchens.",
   },
   {
-    id: "item-2",
-    question: "Is this mobile friendly?",
+    id: 2,
+    question: "Do you charge a call out fee?",
     answer:
-      "Yes! The platform is fully responsive and works smoothly on desktops, tablets, and smartphones.",
+      "Call out fees may vary depending on the service and location. Please contact us for confirmation before booking.",
   },
   {
-    id: "item-3",
-    question: "How can I contact support?",
+    id: 3,
+    question: "How quickly can your company send out an engineer?",
     answer:
-      "You can reach out to our support team via email or live chat 24/7 for assistance.",
+      "Response times depend on your location and the type of service required. Please contact us to confirm availability.",
   },
   {
-    id: "item-4",
-    question: "Do you offer a free trial?",
+    id: 4,
+    question: "What should I do if I get a water leak?",
     answer:
-      "Yes, we offer a 14-day free trial so you can explore all the features before committing.",
+      "If you notice a water leak, first turn off the main water supply to prevent further damage. Then, contact our support team immediately so we can send an engineer to fix the issue as soon as possible",
   },
 ];
 
-export default function FAQ() {
+export default function Faq() {
   return (
     <section className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="text-center mb-10">
         <h2 className="text-3xl sm:text-4xl font-bold mb-3">
-          Frequently Asked Questions
+          Frequently asked questions
         </h2>
         <p className="text-gray-500 max-w-2xl mx-auto">
           Here are some common questions our users ask. If you have more, feel
@@ -48,17 +48,17 @@ export default function FAQ() {
       </div>
 
       <Accordion type="single" collapsible className="w-full space-y-4">
-        {faqs.map((faq) => (
+        {accordionsItems.map((item) => (
           <AccordionItem
-            key={faq.id}
-            value={faq.id}
+            key={item.id}
+            value={item.id}
             className="border rounded-lg"
           >
             <AccordionTrigger className="px-4 text-lg">
-              {faq.question}
+              {item.question}
             </AccordionTrigger>
             <AccordionContent className="px-4 pb-4 text-gray-600">
-              {faq.answer}
+              {item.answer}
             </AccordionContent>
           </AccordionItem>
         ))}
