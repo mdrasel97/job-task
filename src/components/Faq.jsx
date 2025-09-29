@@ -36,7 +36,7 @@ const accordionsItems = [
 
 export default function Faq() {
   return (
-    <section className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <section className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="text-center mb-10">
         <h2 className="text-3xl sm:text-4xl font-bold mb-3">
           Frequently asked questions
