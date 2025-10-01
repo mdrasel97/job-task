@@ -7,13 +7,13 @@ import Marquee from "react-fast-marquee";
 import "aos/dist/aos.css";
 
 const partners = [
-  { id: 1, name: "PipeMaster", logo: "/partners/pipemaster.png" },
-  { id: 2, name: "AquaFlow", logo: "/partners/aquaflow.png" },
-  { id: 3, name: "WaterPro", logo: "/partners/waterpro.png" },
-  { id: 4, name: "FixIt", logo: "/partners/fixit.png" },
-  { id: 5, name: "PlumbGuard", logo: "/partners/plumbguard.png" },
-  { id: 6, name: "PipeKing", logo: "/partners/pipeking.png" },
-  { id: 7, name: "FlowTech", logo: "/partners/flowtech.png" },
+  { id: 1, name: "PipeMaster", logo: "/assets/patner1.png" },
+  { id: 2, name: "AquaFlow", logo: "/assets/patner2.png" },
+  { id: 3, name: "WaterPro", logo: "/assets/patner3.png" },
+  { id: 4, name: "FixIt", logo: "/assets/patner4.png" },
+  { id: 5, name: "PlumbGuard", logo: "/assets/patner5.png" },
+  { id: 6, name: "PipeKing", logo: "/assets/patner6.png" },
+  { id: 7, name: "FlowTech", logo: "/assets/patner7.png" },
 ];
 
 export default function OurTrustedPartners() {
@@ -40,7 +40,7 @@ export default function OurTrustedPartners() {
             {partners.map((partner) => (
               <div
                 key={partner.id}
-                className="flex items-center justify-center mx-8 grayscale hover:grayscale-0 transition"
+                className="flex items-center justify-center mx-8 hover:grayscale-0 transition"
               >
                 <Image
                   src={partner.logo}
