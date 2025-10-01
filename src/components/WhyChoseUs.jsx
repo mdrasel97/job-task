@@ -1,7 +1,10 @@
 "use client";
 
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import Aos from "aos";
 import { Wrench, Clock, BadgeDollarSign, ShieldCheck } from "lucide-react";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
 
 const reasons = [
   {
@@ -35,14 +38,19 @@ const reasons = [
 ];
 
 export default function WhyChooseUs() {
+  useEffect(() => {
+    Aos.init({ duration: 1200 });
+  }, []);
   return (
     <section className="py-16 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-          Why Choose{" "}
-          <span className="text-blue-600">Our Plumbing Service?</span>
+        <h2
+          data-aos="fade-right"
+          className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white"
+        >
+          Why Choose <span className="text-primary">Our Plumbing Service?</span>
         </h2>
-        <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+        <p className="mt-4 text-sm text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
           We take pride in providing fast, reliable, and affordable plumbing
           solutions. Here’s why customers trust us.
         </p>
@@ -51,18 +59,16 @@ export default function WhyChooseUs() {
           {reasons.map((reason) => (
             <Card
               key={reason.id}
-              className="shadow-md hover:shadow-xl transition rounded-2xl"
+              className="shadow-md hover:shadow-xl transition rounded-2xl hover:bg-primary hover:text-white"
             >
               <CardHeader>
-                <reason.icon className="h-10 w-10 text-blue-600 mx-auto mb-2" />
-                <CardTitle className="text-xl font-semibold text-gray-900 dark:text-white">
+                <reason.icon className="h-10 w-10 hover:text-white mx-auto mb-2" />
+                <CardTitle className="text-xl font-semibold">
                   {reason.title}
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">
-                  {reason.description}
-                </p>
+                <p className=" text-sm">{reason.description}</p>
               </CardContent>
             </Card>
           ))}

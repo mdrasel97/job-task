@@ -1,7 +1,10 @@
 "use client";
 
+import Aos from "aos";
 import Image from "next/image";
+import { useEffect } from "react";
 import Marquee from "react-fast-marquee";
+import "aos/dist/aos.css";
 
 const partners = [
   { id: 1, name: "PipeMaster", logo: "/partners/pipemaster.png" },
@@ -14,13 +17,19 @@ const partners = [
 ];
 
 export default function OurTrustedPartners() {
+  useEffect(() => {
+    Aos.init({ duration: 1200 });
+  }, []);
   return (
     <section className="py-16 bg-white dark:bg-gray-950">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-          Our Trusted <span className="text-blue-600">Partners</span>
+        <h2
+          data-aos="fade-left"
+          className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white"
+        >
+          Our Trusted <span className="text-primary">Partners</span>
         </h2>
-        <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+        <p className="mt-4 text-sm text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
           We proudly collaborate with leading plumbing suppliers and trusted
           brands to deliver the highest quality service.
         </p>

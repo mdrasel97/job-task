@@ -6,6 +6,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Aos from "aos";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
 
 const accordionsItems = [
   {
@@ -35,13 +38,19 @@ const accordionsItems = [
 ];
 
 export default function Faq() {
+  useEffect(() => {
+    Aos.init({ duration: 1200 });
+  }, []);
   return (
     <section className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="text-center mb-10">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-3">
-          Frequently asked questions
+        <h2
+          data-aos="fade-left"
+          className="text-3xl sm:text-4xl font-bold mb-3"
+        >
+          Frequently asked <span className="text-primary">questions</span>
         </h2>
-        <p className="text-gray-500 max-w-2xl mx-auto">
+        <p className="text-gray-500 max-w-2xl text-sm mx-auto">
           Here are some common questions our users ask. If you have more, feel
           free to contact us.
         </p>
