@@ -21,7 +21,7 @@ export default function OurTrustedPartners() {
     Aos.init({ duration: 1200 });
   }, []);
   return (
-    <section className="py-16 bg-white dark:bg-gray-950">
+    <section className="py-16 bg-white dark:bg-gray-950 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
         <h2
           data-aos="fade-left"

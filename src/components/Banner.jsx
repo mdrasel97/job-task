@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 
 export default function Banner() {
   return (
-    <section className="relative w-full mt-16 bg-gradient-to-r from-blue-100 to-blue-200 dark:from-gray-900 dark:to-gray-800">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <section className="relative w-full mt-16 bg-gradient-to-r from-blue-100 to-blue-200 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-10 items-center justify-center">
         {/* Left Content */}
         <motion.div
           initial={{ x: -50, opacity: 0 }}

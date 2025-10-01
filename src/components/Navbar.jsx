@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold text-primary">
-            <img src="/plumber-logo.png" alt="Logo" className="w-58 h-24" />
+            <img src="/logo.svg" alt="Logo" className="w-58 h-24" />
           </Link>
 
           {/* Desktop Menu */}

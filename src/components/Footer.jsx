@@ -6,7 +6,7 @@ import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-white py-12">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         <div className="flex flex-col items-start">
           {/* Logo / Title */}
           <img src="/plumber-logo.png" alt="Logo" className="w-58 h-24" />

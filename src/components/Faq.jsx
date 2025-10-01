@@ -42,7 +42,7 @@ export default function Faq() {
     Aos.init({ duration: 1200 });
   }, []);
   return (
-    <section className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <section className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 overflow-hidden">
       <div className="text-center mb-10">
         <h2
           data-aos="fade-left"

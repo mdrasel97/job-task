@@ -38,7 +38,7 @@ export default function OurBestProduct() {
     Aos.init({ duration: 1200 });
   }, []);
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section className="py-20 bg-gray-50 dark:bg-gray-900 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
         <h2
           data-aos="fade-right"
