@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Plumber Website
 
-## Getting Started
+A modern, responsive **Plumber Service Website** built with **Next.js, Tailwind CSS, shadcn/ui, and Framer Motion**.  
+This website showcases your plumbing services, trusted partners, best products, and allows customers to contact you easily.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌟 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Responsive Design** – Works on mobile, tablet, and desktop
+- **Hero Banner** – Animated using Framer Motion (fade + slide effects)
+- **Why Choose Us** – Feature cards highlighting your service advantages
+- **Our Trusted Partners** – Marquee logo section for partner companies
+- **About Us** – Company overview with image and description
+- **Contact Form** – Responsive contact form with address, phone, and email
+- **Best Products** – Showcase top plumbing tools and products
+- **CTA Buttons** – Book a plumber or call now directly from the website
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠 Tech Stack
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Frontend:** Next.js, React, Tailwind CSS
+- **UI Components:** shadcn/ui, lucide-react
+- **Animations:** Framer Motion
+- **Image Handling:** Next.js Image component
+- **Marquee:** react-fast-marquee

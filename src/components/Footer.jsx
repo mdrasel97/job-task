@@ -1,7 +1,15 @@
 "use client";
 
 import React from "react";
-import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import {
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+  PhoneCall,
+  Mail,
+  MapPin,
+} from "lucide-react";
 
 export default function Footer() {
   return (
@@ -26,7 +34,7 @@ export default function Footer() {
               <Twitter size={16} />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/rasel-developer/"
               className="bg-blue-800 hover:bg-blue-900 p-2 rounded-full transition text-white"
             >
               <Linkedin size={16} />
@@ -125,9 +133,19 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
           <ul className="space-y-2 text-gray-600">
-            <li>1 Sail Street, London, SE11 6NQ</li>
-            <li>enquiries@PlumbingPros.com</li>
-            <li>020 4527 6474</li>
+            <li className="flex items-center justify-start gap-4">
+              <MapPin />
+              <p className="">1 Sail Street, London, SE11 6NQ</p>
+            </li>
+            <li className="flex items-center justify-start gap-4">
+              <Mail />
+              <p>enquiries@PlumbingPros.com</p>
+            </li>
+            <li className="flex items-center justify-start gap-4">
+              {" "}
+              <PhoneCall />
+              <p>020 4527 6474</p>
+            </li>
           </ul>
         </div>
       </div>
