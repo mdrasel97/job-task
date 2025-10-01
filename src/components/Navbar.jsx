@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold text-primary">
-            MyBrand
+            <img src="/plumber-logo.png" alt="Logo" className="w-58 h-24" />
           </Link>
 
           {/* Desktop Menu */}
@@ -61,7 +61,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white shadow-md">
-          <div className="px-4 pt-2 pb-3 space-y-2">
+          <div className="px-4 pt-2 pb-3 space-y-2 text-center">
             {navLinks.map((link) => (
               <Link
                 key={link.name}

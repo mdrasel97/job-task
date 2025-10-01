@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         <div className="flex flex-col items-start">
           {/* Logo / Title */}
-          <h1 className="text-2xl font-bold mb-4">Business Logo</h1>
+          <img src="/plumber-logo.png" alt="Logo" className="w-58 h-24" />
 
           {/* Social Icons */}
           <div className="flex space-x-3">

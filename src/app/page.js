@@ -2,6 +2,8 @@ import Banner from "@/components/Banner";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import GetInTouch from "@/components/GetInTouch";
+import OurTrustedPartners from "@/components/OurTrustedPartners";
+import WhyChooseUs from "@/components/WhyChoseUs";
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <Banner />
       <Faq />
       <GetInTouch />
+      <WhyChooseUs />
+      <OurTrustedPartners />
       <Footer />
     </div>
   );
